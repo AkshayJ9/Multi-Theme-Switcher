@@ -8,6 +8,7 @@
 
 ## 📧 Contact
 **Developer:** Akshay Jadhav  
+**Job Role:** React JS Developer Role
 **Email:** akshayj.contact@gmail.com  
 **GitHub:** [akshayj9](https://github.com/akshayj9)  
 **LinkedIn:** [Akshay Jadhav](https://www.linkedin.com/in/akshaykjadhav)
