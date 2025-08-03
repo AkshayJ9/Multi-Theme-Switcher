@@ -1,69 +1,86 @@
-# React + TypeScript + Vite
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
 
-Currently, two official plugins are available:
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+# 🌈 Multi-Theme Switcher App
 
-## Expanding the ESLint configuration
+## 🌍 Live Demo
+[Multerthemswitcher.com](https://multerthemswitcher.netlify.app/)
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+## 📧 Contact
+**Developer:** Akshay Jadhav  
+**Email:** akshayj.contact@gmail.com  
+**GitHub:** [akshayj9](https://github.com/akshayj9)  
+**LinkedIn:** [Akshay Jadhav](https://www.linkedin.com/in/akshaykjadhav)
 
-```js
-export default tseslint.config([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
+A responsive React + TypeScript web application that demonstrates **multi-theme support** with **Context API**, **Tailwind CSS**, **API integration**, and **persistent theme selection**.
 
-      // Remove tseslint.configs.recommended and replace with this
-      ...tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      ...tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      ...tseslint.configs.stylisticTypeChecked,
+---
 
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
+## 📌 Features
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+- **Three Distinct Themes**
+  - **Theme 1:** Minimalist light mode (sans-serif font)
+  - **Theme 2:** Dark mode with **sidebar layout** (serif font)
+  - **Theme 3:** Colorful **card grid layout** (Pacifico playful font)
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+- **Theme Management**
+  - Context API for state management
+  - Theme persists using **localStorage**
+  - Smooth animated transitions between themes
 
-export default tseslint.config([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
+- **Responsive Layout**
+  - Fully optimized for **desktop and mobile**
+  - **Sidebar navigation** in Theme 2
+  - **Card grid** in Theme 3
+
+- **API Integration**
+  - Fetches products from **[FakeStoreAPI](https://fakestoreapi.com/products)**
+  - Displays product cards with hover effects
+
+- **React Router**
+  - Multi-page navigation: **Home, About, Contact**
+
+- **TypeScript + Tailwind CSS**
+  - Clean, modular, and professional project structure
+
+---
+
+## 📂 Project Structure
+
+src/
+│ App.tsx
+│ App.css
+│ index.css
+│
+├── components/
+│ ├── Header.tsx
+│ ├── Sidebar.tsx
+│ ├── ThemeSwitcher.tsx
+│ └── ProductCard.tsx
+│
+├── context/
+│ └── ThemeContext.tsx
+│
+├── hooks/
+│ └── useFetchProducts.ts
+│
+├── pages/
+│ ├── Home.tsx
+│ ├── About.tsx
+│ └── Contact.tsx
+
+
+---
+
+## ⚡ Quick Start
+
+### 1️⃣ Clone the repository
+```bash
+git clone <your-repo-url>
+cd multi-theme-app
+
+
+-Install dependencies
+npm install
+- Run the app
+npm start
